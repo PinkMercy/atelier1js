@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x 
+        x=prompt("donnez un nombre");
+        if(isNaN(x))
+        alert("impossible") ;
+        list=x.toString().split("")
+        mb=0
+       for(let i=0;i<list.length;i++)
+       {
+        mb+=Math.pow(parseInt(list[i]),3)
+        console.log(mb)
+       }
+        if (x==mb)
+        {
+            document.write(x," est un nombre cubique")
+            
+        }else document.write("non cubique")
+
+        /*if (x==Math.pow(parseInt(list[0]),3)+Math.pow(parseInt(list[1]),3)+Math.pow(parseInt(list[2]),3))
+        {
+            document.write(x,"est un nombre cubique")
+            
+        }else document.write("non cubique")*/
+    </script>
+</body>
+</html>

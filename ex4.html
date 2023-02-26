@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+          var x ;
+        x=prompt("donnez un nombre");
+        if(isNaN(x))
+        alert("imoossible") ;
+        document.write("<h3>table de multiplication</h3>")
+        document.write("<table border=1 style='width:300px; text-align : center ;'><caption>tableau de",x,"</caption>")
+            document.write("<tr><th>x</th><td>",x,"</td></tr>")
+            for(let i=1;i<=9;i++)
+            {
+                document.write("<tr><td style='text-align : center ;'>",i,"</td><td style=' text-align : center ;'>",i*x,"</td></tr>")
+            }
+    </script>
+</body>
+</html>

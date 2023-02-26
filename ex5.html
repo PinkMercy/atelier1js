@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x ;
+    var a=prompt("donnez un nombre");
+    var b=prompt("donnez un nombre");
+    var c=prompt("donnez un nombre");
+function test()
+{
+    
+        if(isNaN(a)&&isNaN(b)&&isNaN(c))
+        alert("imoossible") ;
+
+        if((a>b) && (a>c))
+        alert("le max entre"+a+"et"+b+"et"+c+"est"+a) ;
+
+        else if((b>a) && (b>c))
+        alert("le max entre"+a+"et"+b+"et"+c+"est"+b) ;
+
+        else if((c>b) && (c>a))
+        alert("le max entre"+a+"et"+b+"et"+c+"est"+c) ;
+}
+    </script>
+    <button onclick="test()">determiner le maximum</button>
+</body>
+</html>

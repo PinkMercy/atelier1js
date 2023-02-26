@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var o ;
+        o=prompt("donnez une longeur");
+        if(isNaN(o))
+        alert("imoossible") ;
+
+        var a ; 
+        a=prompt("donnez une largeur");
+        if ((isNaN(a)) || (o<a))
+        alert("imoossible") ;
+        else
+        var s=parseFloat(a)*parseFloat(o) ;
+        var p=2*(parseFloat(a)+parseFloat(o)) ;
+        document.write(s) ;
+        document.write(p);
+        document.write("<table border='1'><tr><td rowspan='2'></td><td>longeur</td><td>largeur</td></tr><tr><td>",o,"</td><td>",a,"</td></tr><tr><td>perimertre</td><td colspan='2'>",p,"</td></tr><tr><td>surface</td><td colspan='2'>",s,"</td></tr></table>") ;
+
+
+</script>
+    <!-- <table border="1">
+        <tr >
+            <td rowspan="2"></td>
+            <td>longeur</td>
+            <td>largeur</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>perimertre</td>
+            <td colspan="2">16</td>
+        </tr>
+        <tr>
+            <td>surface</td>
+            <td colspan="2">16</td>
+        </tr> 
+    </table> 
+
+    <table border="1">
+        <tr >
+            <td rowspan="2"></td>
+            <td>longeur</td>
+            <td>largeur</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>perimertre</td>
+            <td colspan="2">16</td>
+        </tr>
+        <tr>
+            <td>surface</td>
+            <td colspan="2">16</td>
+        </tr> 
+    </table>-->
+</body>
+</html>
